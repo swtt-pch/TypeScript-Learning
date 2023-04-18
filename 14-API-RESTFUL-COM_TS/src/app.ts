@@ -7,7 +7,7 @@ app.use(express.json())
 
 const port = config.get<number>("port")
 
-
+app.use("/api/", router)
 
 app.listen(port, async () => {
     console.log(`Aplicação está funcionando na porta: ${port}`)
